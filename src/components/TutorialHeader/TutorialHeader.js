@@ -24,19 +24,19 @@ import {
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-      <Header aria-label="Carbon Tutorial">
+      <Header aria-label="Mais AGEMS">
         <SkipToContent />
         <HeaderMenuButton
           aria-label="Open menu"
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderName element={Link} to="/" prefix="IBM">
-          Carbon Tutorial
+        <HeaderName element={Link} to="/" prefix="+">
+          AGEMS
         </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem element={Link} to="/repos">
-            Repositories
+          <HeaderMenuItem element={Link} to="/dashboard">
+            Dashboard
           </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
@@ -45,7 +45,7 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem href="/repos">Dashboard</HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>

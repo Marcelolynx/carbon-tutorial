@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+$feature-flags: (
+  grid-columns-16: true,
+);
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
